@@ -125,4 +125,8 @@ $(document).ready(function(){
         $("#pizza-details").append("<ul><li>" + pizzaDetails + "</li></ul>");
         // $("#size, #crust, #toppings,").val("");
       });
+
+      $("#submit-pizza").click(function() {
+        $("#deliver").toggle();
+      });
 })
