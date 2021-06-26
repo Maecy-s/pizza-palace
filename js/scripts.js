@@ -45,5 +45,51 @@ $(document).ready(function(){
         else if (this.crust === "flatbread") {
             this.pizzaPrice += "150"
         }
+
+        if (this.toppings === "pepperoni") {
+            this.pizzaPrice += 100;
+        }
+        else if (this.toppings === "mushrooms") {
+            this.pizzaPrice += 150;
+        }
+        else if (this.toppings === "onions"){
+            this.pizzaPrice += 60;
+        }
+        else if (this.toppings === "sausage") {
+            this.pizzaPrice += 100;
+        }
+        else if (this.toppings === "bacon") {
+            this.pizzaPrice += 200;
+        }
+        else if (this.toppings === "black-olives") {
+            this.pizzaPrice += 250;
+        }
+        else if (this.toppings === "green-pepper") {
+            this.pizzaPrice += 100;
+        }
+        else if (this.toppings === "pinapple") {
+            this.pizzaPrice += 100;
+        }
+        else if (this.toppings === "spinach") {
+            this.pizzaPrice += 130;
+        }
+        else if(this.toppings === "tomato") {
+            this.pizzaPrice += 100;
+        }
+        else if (this.toppings === "beef") {
+            this.pizzaPrice += 120;
+        }
+        else if (this.toppings === "chicken") {
+            this.pizzaPrice += 150;
+        }
+        else if (this.toppings === "ham") {
+            this.pizzaPrice += 120;
+        }
+        else if (this.toppings === "cheese") {
+            this.pizzaPrice += 150;
+        }
+
+
+        
     }
 })
