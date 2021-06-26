@@ -129,4 +129,8 @@ $(document).ready(function(){
       $("#submit-pizza").click(function() {
         $("#deliver").toggle();
       });
+
+      $("#checkout-btn").click(function() {
+        $("#order-details").toggle();
+      });
 })
