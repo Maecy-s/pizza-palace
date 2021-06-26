@@ -92,9 +92,23 @@ $(document).ready(function(){
 
         if (this.extra === "xtra") {
             this.pizzaPrice += 80;
-        }
+        }   
+    };
 
+    //business logic
 
-        
+    function Address(address) {
+        this.address = address;
+        this.deliveryAddress = (address);
     }
+
+    order.prototype.finalCost = function() {
+        var cartTotalPrice = [];
+        for (var arrayElement = 0; arrayElemnt < totalPriceArray.length; arrayElement++) {
+            cartTotalPrice += totalPriceArray[arrayElement];
+        }
+        return cartTotalPrice;
+    };
+
+   
 })
