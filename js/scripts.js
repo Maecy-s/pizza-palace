@@ -90,6 +90,11 @@ $(document).ready(function(){
         }
 
 
+        if (this.extra === "xtra") {
+            this.pizzaPrice += 80;
+        }
+
+
         
     }
 })
