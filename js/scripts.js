@@ -110,5 +110,19 @@ $(document).ready(function(){
         return cartTotalPrice;
     };
 
-   
+    $("form#custom-pizza").submit(function(event) {
+        event.preventDefault();
+        var size = $("checkbox#size").val();
+        var crust = $("select#crust").val();
+        var toppings = $("checkbox#toppings").val();
+        var extra = $("checkbox#extra").val();
+        var pizzaDetails = (size + " - " + crust + " - " + toppings + " - " + extra);
+        var newPizzaOrder = new Order(size, crust, toppings, extra);
+        newPizzaOrder.pizzaCost();
+        totalPriceArray.push(newPizzaOrder.pizzaPrice);
+        // $("#pizza-details").hide();
+        $("#final-cost").text(newPizzaOrder.finalCost());
+        $("#pizza-details").append("<ul><li>" + pizzaDetails + "</li></ul>");
+        // $("#size, #crust, #toppings,").val("");
+      });
 })
