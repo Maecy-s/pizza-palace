@@ -9,6 +9,7 @@ $(document).ready(function(){
         this.size = size;
         this.crust = crust;
         this.toppings = toppings;
+        this.extra = extra;
         this.pizzaPrice = 0;
         this.amount = amount;
     }

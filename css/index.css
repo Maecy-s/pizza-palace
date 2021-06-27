@@ -1,0 +1,15 @@
+.wel {
+    background-image: url(/images/img7.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    color: aliceblue;
+}
+
+/* body {
+    background-image: url(/images/img8.webp);
+    background-repeat: no-repeat;
+    color: aliceblue;
+    height: 100%;
+    width: 100%;
+} */

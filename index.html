@@ -13,17 +13,19 @@
 </head>
 <body>
     <div class="main">
-        <div class="invite">
-            <p>
-                WELCOME TO MAMA P's PIZZA PALACE
-            </p>
-        </div>
-        <div class="intro">
-            <p>
-                At Mama P's you can get yourself your favourite pizza at a very afordable price. 
-                <br>
-                They are all home-made pizzas and of the best quality.
-            </p>
+        <div class="wel">
+            <div class="invite">
+                <p>
+                    WELCOME TO MAMA P's PIZZA PALACE
+                </p>
+            </div>
+            <div class="intro">
+                <p>
+                    At Mama P's you can get yourself your favourite pizza at a very afordable price. 
+                    <br>
+                    They are all home-made pizzas and of the best quality.
+                </p>
+            </div>
         </div>
         <div class="menu col-md-12">
             <div class="menu-overlay">
@@ -32,17 +34,17 @@
                 </h1>
                 <div class="pizza-menu row text-center">
                     <figure class="col-sm-4">
-                        <img src="" alt="Small-pizza">
+                        <img src="images/img2.webp" alt="Small-pizza">
                         <figcaption class="text">Regular <br>Ksh. 300</figcaption>
                     </figure>
 
                     <figure class="col-sm-4">
-                        <img src="" alt="Medium-pizza">
+                        <img src="images/img13.jpg" alt="Medium-pizza">
                         <figcaption class="text">Medium <br>Ksh. 600</figcaption>
                     </figure>
 
                     <figure class="col-sm-4">
-                        <img src="" alt="Large-pizza">
+                        <img src="images/img3.webp" alt="Large-pizza">
                         <figcaption class="text">Large <br>Ksh.900</figcaption>
                     </figure>
 
@@ -53,9 +55,9 @@
         <form class="form-group" id="custom-pizza">
             <div class="order">
                 <div class="row">
-                    <div class="col-md-3 col-xs-9">
+                    <div class="col-md-4 col-xs-9">
                         <div class="card">
-                            <img src="" class="card-img-top" alt="...">
+                            <img src="images/img14.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h4>Pizza sizes</h4>
                                 <p class="card-text">Choose your pizza size: </p>
@@ -75,18 +77,28 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 offset-sm-3 text-center">
-                    <label for="crust">Choos your favourite crust: </label>
-                    <select class="custom-select custom-select-md mb-3" id="crust" required>
-                        <option value="thin">Thin Crust @ Ksh. 100 </option>
-                        <option value="crispy">Crispy Crust @ Ksh. 100 </option>
-                        <option value="glutten">Glutten-free Crust @ Ksh. 120 </option>
-                        <option value="flat">FlatBread Crust @ Ksh. 150 </option>
-                        <option value="thick">Thick  Crust @ Ksh. 180 </option>
-                        <option value="stuffed">Chees-stuffed Crust @ Ksh. 230 </option>
-                        <option value="custom">Custom Crust @ Ksh. 280 </option>
-                    </select>
+                <div class="row">
+                    <div class="col-md-4 col-xs-9 text-center">
+                        <div class="card">
+                            <img src="images/img18.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <label for="crust">Choos your favourite crust: </label>
+                                <select class="custom-select custom-select-md mb-3" id="crust" required>
+                                    <option value="thin">Thin Crust @ Ksh. 100 </option>
+                                    <option value="crispy">Crispy Crust @ Ksh. 100 </option>
+                                    <option value="glutten">Glutten-free Crust @ Ksh. 120 </option>
+                                    <option value="flat">FlatBread Crust @ Ksh. 150 </option>
+                                    <option value="thick">Thick  Crust @ Ksh. 180 </option>
+                                    <option value="stuffed">Chees-stuffed Crust @ Ksh. 230 </option>
+                                    <option value="custom">Custom Crust @ Ksh. 280 </option>
+                                </select>
+                            </div>
+                           
+                        </div>
+                        
+                    </div>
                 </div>
+                
                 <div class="topping">
                     <div>
                         <input type="checkbox" name="top-1" value="top-1" id="top-1" checked select multiple>
@@ -149,7 +161,7 @@
                 <div id="extra">
                     <h4>Choose your prefered extra toppings all at Ksh. 80: </h4>
                     <div>
-                        <input type="radio" name="top-1" value="top-1" id="xtra" checked select multiple>
+                        <input type="radio" name="top-1" value="top-1" id="xtra"  select multiple>
                         <label for="top-1">Pepperoni</label>
                     </div>
                     <div>
