@@ -15,13 +15,13 @@ $(document).ready(function(){
     }
 
     order.prototype.pizzaCost = function() {
-        if (this.size ==="small-pizza") {
+        if (this.size ==="size-1") {
             this.pizzaPrice += 300;
         }
-        else if (this.size ==="medium-pizza") {
+        else if (this.size ==="size-2") {
             this.pizzaPrice += 600;
         }
-        else if (this.size ==="large-pizza") {
+        else if (this.size ==="size-3") {
             this.pizzaPrice += 900;
         }
         
@@ -34,59 +34,59 @@ $(document).ready(function(){
         else if (this.crust === "thick") {
             this.pizzaPrice += 180;
         }
-        else if (this.crust === "cheese-stuffed") {
+        else if (this.crust === "stuffed") {
             this.pizzaPrice += 230;
         }
-        else if (this.crust === "glutten-free") {
+        else if (this.crust === "glutten") {
             this.pizzaPrice += 120;
         }
         else if (this.crust === "custom") {
             this.pizzaPrice += 280;
         }
-        else if (this.crust === "flatbread") {
+        else if (this.crust === "flat") {
             this.pizzaPrice += "150"
         }
 
-        if (this.toppings === "pepperoni") {
+        if (this.toppings === "top-1") {
             this.pizzaPrice += 100;
         }
-        else if (this.toppings === "mushrooms") {
+        else if (this.toppings === "top-2") {
             this.pizzaPrice += 150;
         }
-        else if (this.toppings === "onions"){
+        else if (this.toppings === "top-3"){
             this.pizzaPrice += 60;
         }
-        else if (this.toppings === "sausage") {
+        else if (this.toppings === "top-4") {
             this.pizzaPrice += 100;
         }
-        else if (this.toppings === "bacon") {
+        else if (this.toppings === "top-5") {
             this.pizzaPrice += 200;
         }
-        else if (this.toppings === "black-olives") {
+        else if (this.toppings === "top-6") {
             this.pizzaPrice += 250;
         }
-        else if (this.toppings === "green-pepper") {
+        else if (this.toppings === "top-7") {
             this.pizzaPrice += 100;
         }
-        else if (this.toppings === "pinapple") {
+        else if (this.toppings === "top-8") {
             this.pizzaPrice += 100;
         }
-        else if (this.toppings === "spinach") {
+        else if (this.toppings === "top-9") {
             this.pizzaPrice += 130;
         }
-        else if(this.toppings === "tomato") {
+        else if(this.toppings === "top-10") {
             this.pizzaPrice += 100;
         }
-        else if (this.toppings === "beef") {
+        else if (this.toppings === "top-11") {
             this.pizzaPrice += 120;
         }
-        else if (this.toppings === "chicken") {
+        else if (this.toppings === "top-12") {
             this.pizzaPrice += 150;
         }
-        else if (this.toppings === "ham") {
+        else if (this.toppings === "top-13") {
             this.pizzaPrice += 120;
         }
-        else if (this.toppings === "cheese") {
+        else if (this.toppings === "top-14") {
             this.pizzaPrice += 150;
         }
 

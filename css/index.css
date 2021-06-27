@@ -7,9 +7,13 @@
 }
 
 /* body {
-    background-image: url(/images/img8.webp);
+    background-image: url(/images/img20.jpg) ;
     background-repeat: no-repeat;
-    color: aliceblue;
-    height: 100%;
-    width: 100%;
+    background-size: cover;
 } */
+
+.menu {
+    background-image: url(/images/img5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
