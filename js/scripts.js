@@ -3,7 +3,7 @@ $(document).ready(function() {
     $("#deliver").hide();
     // Business Logic
     var totalPriceArray = [];
-    function Order(size, crust, toppings, amount) {
+    function Order(size, crust, toppings, extra, amount) {
       this.size = size;
       this.crust = crust;
       this.toppings = toppings;
@@ -96,7 +96,7 @@ $(document).ready(function() {
       // $("#pizza-details").hide();
       $("#final-cost").text(newPizzaOrder.finalCost());
       $("#pizza-details").append("<ul><li>" + pizzaDetails + "</li></ul>");
-      // $("#size, #crust, #toppings,").val("");
+      $("#size, #crust, #toppings, #extra").val("");
     });
     $("#submit-pizza").click(function() {
       $("#deliver").toggle();
