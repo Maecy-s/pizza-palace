@@ -82,6 +82,10 @@
                                     </div>
                                     <div>
                                         <input type="radio" name="custom" value="custom" id="custom">
+                                        <label for="custom">Custom</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="flat" value="flat" id="flat">
                                         <label for="flat">Flatbread</label>
                                     </div>
                                 </div>
@@ -97,7 +101,7 @@
                                 <div id="toppings">
                                     <div>
                                         <input type="radio" name="pineapple" value="pineapple" id="pinepple">
-                                        <label for="pineapple">pineapple</label>
+                                        <label for="pineapple">pineapple (100)</label>
                                     </div>
                                     <div>
                                         <input type="radio" name="pepperoni" value="pepperoni" id="pepperoni">
@@ -105,51 +109,51 @@
                                     </div>
                                     <div>
                                         <input type="radio" name="mushrooms" value="mushrooms" id="mushrooms">
-                                        <label for="mushrooms">Mushrooms</label>
+                                        <label for="mushrooms">Mushrooms (150)</label>
                                     </div>
                                     <div>
                                         <input type="radio" name="onions" value="onions" id="onions">
-                                        <label for="onions">Onions</label>
+                                        <label for="onions">Onions (60) </label>
                                     </div>
                                     <div>
                                         <input type="radio" name="sausage" value="sausage" id="sausage">
-                                        <label for="sausage">Sausage</label>
+                                        <label for="sausage">Sausage (100)</label>
                                     </div>
                                     <div>
                                         <input type="radio" name="bacon" value="bacon" id="bacon">
-                                        <label for="bacon">Bacon</label>
+                                        <label for="bacon">Bacon (200)</label>
                                     </div>
                                     <div>
                                         <input type="radio" name="olives" value="olives" id="olives">
-                                        <label for="olives">Black olives</label>
+                                        <label for="olives">Black olives (250)</label>
                                     </div>
                                     <div>
                                         <input type="radio" name="pepper" value="pepper" id="pepper">
-                                        <label for="pepper">Green pepper</label>
+                                        <label for="pepper">Green pepper (100)</label>
                                     </div>
                                     <div>
                                         <input type="radio" name="spinach" value="spinach" id="spinach">
-                                        <label for="spinach">Spinach</label>
+                                        <label for="spinach">Spinach (130)</label>
                                     </div>
                                     <div>
                                         <input type="radio" name="tomato" value="tomato" id="tomato">
-                                        <label for="tomato">Tomato</label>
+                                        <label for="tomato">Tomato (100)</label>
                                     </div>
                                     <div>
                                         <input type="radio" name="beef" value="beef" id="beef">
-                                        <label for="beef">Beef</label>
+                                        <label for="beef">Beef (120)</label>
                                     </div>
                                     <div>
                                         <input type="radio" name="chicken" value="chicken" id="chicken">
-                                        <label for="chicken">Chicken</label>
+                                        <label for="chicken">Chicken (150)</label>
                                     </div>
                                     <div>
                                         <input type="radio" name="ham" value="ham" id="ham">
-                                        <label for="ham">Ham</label>
+                                        <label for="ham">Ham (120)</label>
                                     </div>
                                     <div>
                                         <input type="radio" name="cheese" value="cheese" id="cheese">
-                                        <label for="cheese">Extra cheese</label>
+                                        <label for="cheese">Extra cheese (200)</label>
                                     </div>
                                 </div>
                             </div>
@@ -159,18 +163,66 @@
                         <div class="card">
                             <img src="css/p1.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">Toppings</h5>
-                                <p class="card-text">Choose toppings:</p>
-                                <select required class="form-control" id="toppings">
-                                    <option></option>
-                                    <option value="pepperoni">Pepperoni (100)</option>
-                                    <label for="pineapple">pineapple</label>
-                                    <input type="radio" name="pineapple" value="pineapple" id="pinepple">
-                                    <option value="sausage">Sausage (150)</option>
-                                    <option value="bacon">Bacon (200)</option>
-                                    <option value="mushrooms">Mushrooms (150)</option>
-                                    <option value="chicken">Chicken (150)</option>
-                                </select>
+                                <h5 class="card-title">Extra toppings</h5>
+                                <p class="card-text">Choose your extra toppings at ksh. 80:</p>
+                                <div id="extra">
+                                    <div>
+                                        <input type="radio" name="pineapple" value="pineapple" id="xtra">
+                                        <label for="pineapple">pineapple</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="pepperoni" value="pepperoni" id="xtra">
+                                        <label for="pepperoni">Pepperoni </label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="mushrooms" value="mushrooms" id="xtra">
+                                        <label for="mushrooms">Mushrooms</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="onions" value="onions" id="xtra">
+                                        <label for="onions">Onions</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="sausage" value="sausage" id="xtra">
+                                        <label for="sausage">Sausage</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="bacon" value="bacon" id="xtra">
+                                        <label for="bacon">Bacon</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="olives" value="olives" id="xtra">
+                                        <label for="olives">Black olives</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="pepper" value="pepper" id="xtra">
+                                        <label for="pepper">Green pepper</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="spinach" value="spinach" id="xtra">
+                                        <label for="spinach">Spinach</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="tomato" value="tomato" id="xtra">
+                                        <label for="tomato">Tomato</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="beef" value="beef" id="xtra">
+                                        <label for="beef">Beef</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="chicken" value="chicken" id="xtra">
+                                        <label for="chicken">Chicken</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="ham" value="ham" id="xtra">
+                                        <label for="ham">Ham</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="cheese" value="cheese" id="xtra">
+                                        <label for="cheese">Extra cheese</label>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
