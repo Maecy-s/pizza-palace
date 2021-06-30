@@ -77,7 +77,7 @@ $(document).ready(function() {
     Order.prototype.finalCost = function() {
       var cartTotalPrice = [];
       for (var arrayElement = 0; arrayElement < totalPriceArray.length; arrayElement++) {
-        cartTotalPrice += totalPriceArray[arrayElement];
+        cartTotalPrice += parseInt(totalPriceArray[arrayElement]);
       }
       return cartTotalPrice;
     };
@@ -85,15 +85,22 @@ $(document).ready(function() {
     });
     $("form#custom-pizza").submit(function(event) {
       event.preventDefault();
-      var size = $("select#size").val();
-      var crust = $("select#crust").val();
-      var toppings = $("select#toppings").val();
-      var extra = $("select#xra").val();
-      var pizzaDetails = (size + " - " + crust + " - " + toppings + " - " + extra);
+      var size = $(".size:checked").val();
+      var crust = $(".crust:checked").val();
+      var toppings = [];
+      $(".toppings:checked").each(function(){
+        toppings.push($(this).val());
+      });
+      var extra = [];
+       $(".extra:checked").each(function() {
+        extra.push($(this).val());
+      });
+      var pizzaDetails = (size + " - " + crust + " - " + toppings + "-" + extra);
       var newPizzaOrder = new Order(size, crust, toppings, extra);
       newPizzaOrder.pizzaCost();
       totalPriceArray.push(newPizzaOrder.pizzaPrice);
       // $("#pizza-details").hide();
+      console.log(size, crust, toppings, extra);
       $("#final-cost").text(newPizzaOrder.finalCost());
       $("#pizza-details").append("<ul><li>" + pizzaDetails + "</li></ul>");
       $("#size, #crust, #toppings, #extra").val("");
